@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
+import FetchData from './Components/FetchData';
+import MouseTracker from './Components/MouseTracker';
+import UpdateDoc from './Components/UpdateDoc';
+// Step 1 : Import useEffect from react library similar to how you have imported useState hook;
+// import PostItem from "./components/PostItem";
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <FetchData/>
+      <MouseTracker/>
+      <UpdateDoc/>
     </div>
   );
-}
+};
+
 
 export default App;
